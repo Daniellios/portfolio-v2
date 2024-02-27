@@ -15,15 +15,15 @@ export const Projects = ({ dictionary }) => {
   return (
     <section
       id='projects'
-      className='bg-black flex w-full justify-center flex-col items-center py-8'>
+      className='bg-black flex w-full justify-center flex-col items-center py-8 pt-0'>
       <div className='max-w-[1440px] w-full'>
-        <h2 className='text-xl mb-10 sm:text-3xl text-white mr-auto pl-10'>
+        <h2 className='text-2xl mb-10 sm:text-3xl text-white mr-auto pl-5 sm:pl-10'>
           {dictionary.title}
         </h2>
 
-        <div className='grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8 w-full it px-10 max-w-[1440px]'>
+        <div className='grid grid-cols-1 px-5 sm:grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8 w-full sm:px-10 max-w-[1440px]'>
           {projects.map(({ id, images, isGame, tags, source, visit }, idx) => (
-            <Card key={id + idx} className='bg-transparent h-[500px]'>
+            <Card key={id} className='bg-transparent h-[500px]'>
               <CardContent>
                 <img
                   src={images[0]}

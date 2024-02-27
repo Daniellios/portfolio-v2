@@ -7,7 +7,7 @@ import { SiGmail } from 'react-icons/si';
 
 export const Footer = () => {
   return (
-    <section className='bg-black w-full flex justify-center items-center p-20 pb-5'>
+    <section className='bg-black w-full flex justify-center items-center p-10 sm:p-20 pb-5'>
       <div className='max-w-[1440px] flex flex-col items-center gap-2'>
         <div className='flex items-center gap-2'>
           <Link

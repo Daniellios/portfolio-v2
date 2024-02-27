@@ -1,8 +1,6 @@
 'use client';
-import React, { useEffect, useRef } from 'react';
-import useTranslation from 'next-translate/useTranslation';
-import { AnimatePresence, motion } from 'framer-motion';
-import useOnClickOutside from '@/hooks/useOnClickOutside';
+import React, { useEffect, useRef, useState } from 'react';
+import { motion } from 'framer-motion';
 import { HeaderTitles } from '@/constants/constants';
 import Link from 'next/link';
 import { AiFillGithub, AiOutlineClose } from 'react-icons/ai';
@@ -17,11 +15,12 @@ import {
 import { useParams } from 'next/navigation';
 
 export const Header = ({ dictionary }) => {
-  const buttonRef = useRef(null);
-  const wrapperRef = useRef();
+  const [isOpen, setIsModalOpen] = useState(false);
   const { lang } = useParams();
 
-  // useOnClickOutside(wrapperRef, () => setIsModalOpen(false));
+  const handleToggleModal = () => {
+    setIsModalOpen(!isOpen);
+  };
 
   return (
     <motion.div
@@ -30,7 +29,7 @@ export const Header = ({ dictionary }) => {
         y: 0,
       }}
       className='bg-black w-full px-8 py-6 flex flex-row items-center z-[40] fixed opacity-90'
-      transition={{ y: { duration: 0.2 } }}>
+      transition={{ y: { duration: 0.3 } }}>
       <div className='w-full max-w-[1980px] flex flex-row justify-end sm:justify-between'>
         <div className='hidden sm:flex items-center gap-4'>
           {HeaderTitles.map((item, index) => (
@@ -84,11 +83,14 @@ export const Header = ({ dictionary }) => {
           </div>
         </div>
 
-        <Sheet className='sm:hidden' ref={wrapperRef}>
+        <Sheet
+          className='sm:hidden'
+          onOpenChange={handleToggleModal}
+          open={isOpen}>
           <SheetTrigger className='flex text-white transition-all w-7 h-7 hover:text-orange-400 cursor-pointer sm:hidden'>
             <GiHamburgerMenu size={'2.5rem'} />
           </SheetTrigger>
-          <SheetContent>
+          <SheetContent className='bg-black/80'>
             <SheetHeader>
               <SheetDescription>
                 <div className='flex flex-col items-center justify-start gap-4'>
@@ -96,7 +98,8 @@ export const Header = ({ dictionary }) => {
                     <Link
                       key={item + index}
                       href={item.link}
-                      className='font-semibold capitalize text-black text-2xl hover:text-orange-400 cursor-pointer transition-all ease-linear'>
+                      onClick={handleToggleModal}
+                      className='font-semibold capitalize text-white text-2xl hover:text-orange-400 cursor-pointer transition-all ease-linear'>
                       {dictionary[`title${index}`]}
                     </Link>
                   ))}

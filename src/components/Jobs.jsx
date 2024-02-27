@@ -8,9 +8,9 @@ export const Expierience = ({ dictionary }) => {
   return (
     <section
       id='experience'
-      className='flex flex-col my-0 mx-auto items-center w-full relative bg-black py-8'>
-      <div className='max-w-[1440px] w-full px-10'>
-        <h2 className='text-xl sm:text-3xl text-white mb-10'>
+      className='flex flex-col my-0 mx-auto items-center w-full relative py-8'>
+      <div className='max-w-[1440px] w-full px-5 sm:px-10'>
+        <h2 className='text-2xl sm:text-3xl text-white mb-10'>
           {dictionary.title}
         </h2>
         <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 w-full gap-8'>
