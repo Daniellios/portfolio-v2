@@ -87,7 +87,7 @@ export const Header = ({ dictionary }) => {
           className='sm:hidden'
           onOpenChange={handleToggleModal}
           open={isOpen}>
-          <SheetTrigger className='flex text-white transition-all w-7 h-7 hover:text-orange-400 cursor-pointer sm:hidden'>
+          <SheetTrigger className='flex mb-[10px] text-white transition-all w-7 h-7  hover:text-orange-400 cursor-pointer sm:hidden'>
             <GiHamburgerMenu size={'2.5rem'} />
           </SheetTrigger>
           <SheetContent className='bg-black/80'>
