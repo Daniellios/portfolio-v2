@@ -1,0 +1,72 @@
+{
+  "exp": {
+    "title": "Work Experience",
+    "j0T": "Front-end Developer",
+    "j0D": "May 2023 - Now",
+    "j0TASK0": "Developed fintech services for one of the largest banks in Russia (React, Redux, TS, Styled Components, Webpack, REST API).",
+    "j0TASK1": "Developed 6 projects from scratch, supported, updated and actively developed 15+ projects across 3 products (React, Angular).",
+    "j0TASK2": "Actively supported and improved component libraries (React, Styled Components, Rollup).",
+    "j0TASK3": "Set up configurations to improve code quality (TSconfig, ESlint, editorconfig).",
+    "j0TASK4": "Used Git, GitLab for project version control. Jira and Confluence to control the work process.",
+    "j0TASK5": "Made architectural decisions and participated in the discussion of new business requirements at the stage of formation.",
+    "j1T": "Fullstack Developer",
+    "j1D": "September 2022 - May 2023",
+    "j1TASK0": "Developed client app with React, TypeScript, Next.js, TailWind",
+    "j1TASK1": "Developed admin dashboard panel",
+    "j1TASK2": "Designed and developed REST API with NestJS, PostgreSQL",
+    "j1TASK3": "Integration of fron-end and backend",
+    "j1TASK4": "Architectural and business logic coordination",
+    "j2T": "Javascript developer",
+    "j2D": "December - June 2022",
+    "j2TASK0": "Developed playable ads using TS, React, PixiJS, HTML, CSS",
+    "j2TASK1": "Contributed and maintained local framework",
+    "j2TASK2": "Worked on scenarios of playbles",
+    "j2TASK3": "Prepared and bundled final projects for clients",
+    "j3T": "HTML Layout Designer",
+    "j3D": "September - December 2021",
+    "j3TASK0": "Web-site building with JS, HTML, SCSS",
+    "j3TASK1": "Terms of refence preparation",
+    "j3TASK2": "Bundle configuration (Parcel, Gulp, Webpack)"
+  },
+  "footer": {
+    "contact": "Contact me!",
+    "call": "call",
+    "email": "email"
+  },
+  "header": {
+    "title0": "Projects",
+    "title1": "Skills",
+    "title2": "Experience",
+    "title3": "Contacts"
+  },
+  "hero": {
+    "welcome": "Hi, my name is",
+    "fullName": "Daniil Blinnikov",
+    "description": "I am Frontend Developer, I build high quality web applications."
+  },
+  "proj": {
+    "title": "Projects",
+    "p0": "Four in a row game",
+    "d0": "Four in a row game for two players",
+    "p1": "Deplace Maison",
+    "d1": "Simple landing page for a clothing brand'",
+    "p2": "ADMIN DASHBOARD",
+    "d2": "Multi page and purpose Admin Dashboard",
+    "p3": "Hidden object",
+    "d3": "Playable ad for G5",
+    "p4": "Yandex Food",
+    "d4": "Playable ad for Yandex Food",
+    "p5": "Маджонг",
+    "d5": "Playable ad for G5",
+    "p6": "MAIL.RU Clone",
+    "d6": "VK all Cup qualification task",
+    "p7": "Kanban Board",
+    "d7": "My implemetation of famous Agile-project management tool",
+    "p8": "INVOICE APP",
+    "d8": "Store and manage the most important info about the rendered services in one place."
+  },
+  "skills": {
+    "title": "Skills",
+    "desc": "Technologies and instruments that I work with"
+  }
+}
